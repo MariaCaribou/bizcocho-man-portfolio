@@ -1,0 +1,231 @@
+.project_page {
+    .home_button {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $grey;
+        padding: 5px;
+        z-index: 10;
+        
+        @include ease-in-out(0.5s, opacity);
+        @include fluid-type(font-size, map-get($map_device_width, small-screen), map-get($map_device_width, desktop), map-get($map_font_size, body-s), map-get($map_font_size, body-s));
+    }
+
+    section {
+        display: block;
+        width: 85%;
+        max-width: 1120px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .project_large_image {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 650px;
+        overflow: hidden;
+        background-color: $dark_black;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin-bottom: 100px;
+
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+
+        @include ease-in-out(0.5s, opacity);
+
+        &::after {
+            content: "";
+            background-color: $dark_black;
+            opacity: 0.25;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    }
+
+    #darkborn_large_image {
+        background-image: url(../img/darkborn/darkborn_large_image.jpg);
+    }
+
+    #afe_large_image {
+        background-image: url(../img/afe/afe_large_image.jpg);
+    }
+
+    #unity_academic_large_image {
+        background-image: url(../img/unity_academic/unity_academic_large_image.jpg);
+    }
+
+    #fight_and_win_large_image {
+        background-image: url(../img/fight_win/fight_win_large_image.jpg);
+    }
+
+    .project_title_summary {
+        margin-top: 125px;
+        margin-bottom: 100px;
+        text-align: left;
+
+        .project_roles {
+            display: block;
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: $grey;
+            margin-bottom: 15px;
+
+            @include fluid-type(font-size, map-get($map_device_width, small-screen), map-get($map_device_width, desktop), map-get($map_font_size, body-2xs), map-get($map_font_size, body-xs));
+        }
+
+        .project_development_time {
+            display: block;
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: $grey;
+
+            @include fluid-type(font-size, map-get($map_device_width, small-screen), map-get($map_device_width, desktop), map-get($map_font_size, body-2xs), map-get($map_font_size, body-xs));
+        }
+
+        .project_title {
+            color: $dark_black;
+            font-weight: 400;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+            font-family: $first_font;
+            margin: 20px 0 0 0;
+
+            @include fluid-type(font-size, map-get($map_device_width, small-screen), map-get($map_device_width, desktop), map-get($map_font_size, title-std), map-get($map_font_size, title-2xl));
+        }
+
+        .project_summary {
+            display: block;
+            width: 100%;
+            max-width: 625px;
+            letter-spacing: 1px;
+            line-height: map-get($map_line_height, xl);
+            font-weight: 400;
+            color: $grey;
+            margin-top: 20px;
+
+            @include fluid-type(font-size, map-get($map_device_width, small-screen), map-get($map_device_width, desktop), map-get($map_font_size, body-s), map-get($map_font_size, body-m));
+        }
+
+        .project_external_link {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 24px;
+            border: 1px solid $dark_black;
+            color: $dark_black;
+            line-height: map-get($map_line_height, xl);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+
+            @include fluid-type(font-size, map-get($map_device_width, small-screen), map-get($map_device_width, desktop), map-get($map_font_size, body-xs), map-get($map_font_size, body-s));
+
+            @include ease-in-out(0.15s, all);
+
+            &:hover {
+                background-color: $dark_black!important;
+                color: $dark_white!important;
+            }
+        }
+    }
+
+    .section_role {
+        margin-bottom: 150px;
+        max-width: 1300px;
+
+        .section_role_text {
+            width: 100%;
+            max-width: 725px;
+            margin: 0 auto 50px auto;
+
+            .section_role_title {
+                color: $dark_black;
+                font-family: $first_font;
+                font-weight: 500;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-bottom: 50px;
+                text-align: left;
+
+                @include fluid-type(font-size, map-get($map_device_width, small-screen), map-get($map_device_width, desktop), map-get($map_font_size, title-m), map-get($map_font_size, title-std));
+            }
+
+            p {
+                display: block;
+                margin: 25px auto 0 auto;
+                width: 100%;
+                letter-spacing: 1px;
+                line-height: map-get($map_line_height, xl);
+                font-weight: 400;
+                color: $grey;
+                text-align: left;
+
+                @include fluid-type(font-size, map-get($map_device_width, small-screen), map-get($map_device_width, desktop), map-get($map_font_size, body-s), map-get($map_font_size, body-m));
+
+                #afe_read_more {
+                    display: inline-block;
+                    margin-top: 40px;
+                    padding: 12px 24px;
+                    border: 1px solid $dark_black;
+                    color: $dark_black;
+                    line-height: map-get($map_line_height, xl);
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    font-family: $first_font;
+
+                    @include fluid-type(font-size, map-get($map_device_width, small-screen), map-get($map_device_width, desktop), map-get($map_font_size, body-xs), map-get($map_font_size, body-s));
+
+                    @include ease-in-out(0.15s, all);
+
+                    &:hover {
+                        background-color: $dark_black!important;
+                        color: $dark_white!important;
+                    }
+                }
+            }
+        }
+
+        .section_role_media {
+            width: 100%;
+            max-width: 1100px;
+            height: calc(85vw * 0.5625);
+            max-height: calc(1100px * 0.5625);
+            margin: 0 auto;
+
+            -webkit-box-shadow: 0 1.8vw 4vw -0.7vw rgba(0, 0, 0, 0.2);
+                    box-shadow: 0 1.8vw 4vw -0.7vw rgba(0, 0, 0, 0.2);
+        }
+
+        #darkborn_tools_programmer_media {
+            background-image: url(../img/darkborn/darkborn_tools_programmer.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+
+            -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+        }
+
+        .role_video {
+            // min-width: 100%;
+            min-height: 100%;
+            // width: 100%;
+            height: 100%;
+            // background: url(polina.jpg) no-repeat;
+            // background-size: cover;
+        }
+    }
+    
+}

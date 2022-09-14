@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Darkborn - Juan Escudero</title>
+
+        <meta name=”google” content=”nositelinkssearchbox”>
+        <meta name="description" content="Hack and Slash game created by Starquake Games (16-people student team) using Unreal Engine 4 and C++.">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.min.css">
+
+        <script src="../js/iphone-inline-video.min.js"></script>
+    </head>
+
+    <body class="project_page no_scroll">
+        <!-- Loader -->
+        <span id="loader">
+            <span id="loader-inner"></span>
+        </span>
+
+        <a class="home_button hidden" href="../index.html">&lt; Home</a>
+
+        <section class="project_title_summary hidden">
+            <span class="project_roles">Tools programmer - Gameplay programmer</span>
+
+            <h1 class="project_title">Darkborn</h2>
+
+            <p class="project_summary">Darkborn is a <strong>Hack and Slash</strong> game in which you take control of Urik, son of God. Urik's nature allows him to use both angelic and demonic powers, resulting in him being exiled and imprisoned in Styx. You will have to escape from this prison and take your revenge against your father.</p>
+
+            <p class="project_summary">Created by Starquake Games, a multidisciplinary team of 16 members, including artists, designers and programmers. I worked as <strong>Tools Programmer</strong> and <strong>Gameplay Programmer</strong> mainly, as well as I collaborated in the <strong>design and implementation of the UI</strong>.</p>
+
+            <a class="project_external_link" href="#!">Download Demo</a>
+        </section>
+
+        <div id="darkborn_large_image" class="project_large_image hidden"></div>
+
+        <section id="darkborn_tools_programmer" class="section_role hidden">
+            <div class="section_role_text">
+                <h2 class="section_role_title">Tools Programmer</h2>
+
+                <p>In order to help designers to create new attacks, skills and combos for Darkborn, we had to design and implement a custom tool, since the Unreal Engine 4 default State Machines tool wasn't scalable enough for our purposes.</p>
+
+                <p><a class="text_link" href="./afe.html">Anotter Fighting Engine</a> (AFE) is a modular, Unreal Engine 4 integrated, scalable tool for creating fighting games (from a God of War to a Street Fighter style game). Made with <strong>C++ over Unreal Engine</strong>, AFE facilitates the creation of new states related to combat, from new magical skills to awesome combos. Thanks to this, <strong>every gameplay aspect of Darkborn (combat, movement, AI...) is based on AFE</strong>.
+                <br>
+                <a id="afe_read_more" href="./afe.html">Read more</a></p>
+            </div>
+
+            <div id="darkborn_tools_programmer_media" class="section_role_media"></div>
+        </section>
+
+        <section id="darkborn_gameplay_programmer" class="section_role">
+            <div class="section_role_text">
+                <h2 class="section_role_title">Gameplay Programmer</h2>
+
+                <p>As Gameplay Programmer, I worked in different areas such as Game Feel, Physics, Camera and AI, focusing more on:</p>
+
+                <p><strong>Game feel</strong>
+                <br>
+                One of the most important aspects that we focused on during the development of Darkborn was to give the user a good combat feeling. This involves a good <strong>auto-targeting system</strong> (invisible to the user), <strong>haptic and visual feedback</strong> (vibration, stucks, camera shakes) and well implemented <strong>opportunity windows</strong> (for combining attacks and skills).</p>
+
+                <p><strong>Physics</strong>
+                <br>
+                Unreal Engine's Physics simulation is great for some games, but when dealing with lots of enemies (moving, elevating and knocking out them) there are situations where there is no control over them. Because of this, <strong>every force applied in Darkborn is internally controlled</strong>, avoiding undesired behaviors and giving more freedom to our designers when creating new combat states.</p>
+            </div>
+
+            <div id="darkborn_gameplay_media" class="section_role_media">
+                <video class="role_video" preload="true" playsinline autoplay muted loop poster="../video/darkborn/darkborn_poster.jpg">
+                    <source src="../video/darkborn/darkborn_gameplay.mp4" type="video/mp4">
+                    <source src="../video/darkborn/darkborn_gameplay.webm" type="video/webm">
+                </video>
+            </div>
+        </section>
+
+        <script src="../js/loader.js"></script>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>AFE - Juan Escudero</title>
+
+        <meta name=”google” content=”nositelinkssearchbox”>
+        <meta name="description" content="AFE (Anotter Fighting Engine) is a modular Unreal Engine tool created by Starquake Games (16-people student team). It is based on a custom State Machine Component specifically designed for creating fighting games.">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.min.css">
+
+        <script src="../js/iphone-inline-video.min.js"></script>
+    </head>
+
+    <body class="project_page no_scroll">
+        <!-- Loader -->
+        <span id="loader">
+            <span id="loader-inner"></span>
+        </span>
+
+        <a class="home_button hidden" href="../index.html">&lt; Home</a>
+
+        <section class="project_title_summary hidden">
+            <span class="project_roles">Tool programmer - Tool designer</span>
+
+            <h1 class="project_title">Anotter Fighting Engine</h2>
+
+            <p class="project_summary">Custom tool made with <strong>C++ and Unreal Engine 4</strong>, developed along with <a class="text_link" href="./darkborn.html">Darkborn</a> during the Master's Degree in Game Programming.</p>
+        </section>
+
+        <div id="afe_large_image" class="project_large_image hidden"></div>
+
+        <section id="afe_tool_programmer_designer" class="section_role hidden">
+            <div class="section_role_text">
+                <h2 class="section_role_title">Tool Programmer / Designer</h2>
+
+				<p>The first problem we found when we started developing <a class="text_link" href="./darkborn.html">Darkborn</a> was that there is almost no information related to fighting games and how they work internally. We went back to the old school games (Golden Axe, Street Fighter, Streets of Rage, etc.) to learn the basics of combat systems. After playing, studying and discussing about these games, we decided to start designing our own tool for creating fighting games.</p>
+				
+				<p>AFE has been developed using C++ over Unreal Engine 4. <strong>It uses UE4 Components</strong> for being modular and scalable, and features an <strong>own State Machine Component</strong> that has been designed to facilitate the creation of combat states. As an overview, the 3 most important features of AFE are:</p>
+
+				<p><strong>State Machine</strong>
+				<br>
+				This component is the one that holds every state that the character may transit to. It is also in charge of communicating these states with their owner, for passing important information related to animations, attacks and skills. One of the important features of this state machine is that it works both with static and dynamic state transitions, making it easier to create combos.</p>
+
+				<p><strong>Commands</strong>
+				<br>
+				Commands are data structures that allow a state to interact with the scene, making it able to apply damage to the surrounding enemies, make the character change its appareance or even shake the camera for giving feedback during a fight.</p>
+			
+				<p><strong>Controlled Physics</strong>
+				<br>
+				While developing <a class="text_link" href="./darkborn.html">Darkborn</a>, we realised that using UE4 physics wasn't a good idea, since we were managing a high number of enemies that received forces, stuns and attacks, causing visual glitches and even undesired behaviors during combat. Because of this, we decided to manage every force using AFE and UE4 Timelines, so every situation in the game is easily controlled.</p>
+			</div>
+
+            <div id="afe_media" class="section_role_media">
+                <video class="role_video" preload="true" playsinline autoplay muted loop poster="../video/afe/afe_poster.jpg">
+                    <source src="../video/afe/afe_video.mp4" type="video/mp4">
+                    <source src="../video/afe/afe_video.webm" type="video/webm">
+                </video>
+            </div>
+        </section>
+
+        <script src="../js/loader.js"></script>
+    </body>
+</html>

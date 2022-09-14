@@ -1,0 +1,96 @@
+@include mobile {
+
+    .full_div_with_margins {
+        top: 0!important;
+        right: 0!important;
+        bottom: 0!important;
+        left: 0!important;
+    }
+
+    .project_section {
+        -webkit-box-orient: vertical!important;
+        -webkit-box-direction: normal!important;
+            -ms-flex-direction: column!important;
+                flex-direction: column!important;
+
+        padding: 75px 0!important;
+        width: 85%!important;
+
+        .project_section_media {
+            width: 100%!important;
+            height: calc(85vw * 0.7)!important;
+            margin-bottom: 50px!important;
+            text-align: left!important;
+            -webkit-box-ordinal-group: 2!important;
+                -ms-flex-order: 1!important;
+                    order: 1!important;
+
+            .project_background_media {
+                height: 100%!important;
+                width: 50%!important;
+                height: calc(85vw * 0.6 * 0.7);
+                left: 0!important;
+            }
+
+            .project_highlight_media {
+                top: 50%!important;
+                width: 95%!important;
+                height: calc(85vw * 0.95 * 0.625)!important;
+                right: 0!important;
+            }
+        }
+
+        .project_section_text {
+            width: 100%!important;
+            -webkit-box-ordinal-group: 3!important;
+                -ms-flex-order: 2!important;
+                    order: 2!important;
+        }
+    }
+
+    .section_with_image_left {
+
+        .project_section_media {
+    
+            .project_background_media {
+                left: 0!important;
+            }
+    
+            .project_highlight_media {
+                right: 0!important;
+            }
+        }
+    }
+
+    .section_with_image_right {
+
+        .project_section_media {
+    
+            .project_background_media {
+                left: 0!important;
+            }
+    
+            .project_highlight_media {
+                right: 0!important;
+            }
+        }
+    }
+
+    .project_page {
+        
+        .project_large_image {
+            height: 250px!important;
+            background-attachment: scroll!important;
+            margin-bottom: 75px!important;
+        }
+
+        .project_title_summary {
+            margin-bottom: 75px!important;
+        }
+
+        .section_role {
+            margin-bottom: 100px!important;
+        }
+    }
+    
+}

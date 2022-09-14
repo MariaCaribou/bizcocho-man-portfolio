@@ -1,0 +1,20 @@
+@include laptop {
+
+    .project_section {
+        width: 85%!important;
+
+        .project_section_media {
+    
+            .project_background_media {
+                height: calc(85vw * 0.6 * 0.7);
+                // max-height: calc(1650px * 0.64);
+            }
+    
+            .project_highlight_media {
+                height: calc(85vw * 0.6 * 0.83 * 0.625);
+                // max-height: calc(1650px * 0.60 * 0.86 * 0.625);
+            }
+        }
+    }
+    
+}
